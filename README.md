@@ -3,8 +3,8 @@ Cílem projektu je implementace severu, který bude komunikovat protokolem HTTP 
 
 ## Server musí podporovat dvě operace:
 ### GET
-Při použití této operace bude možné provést překlad jednoho dotazu, který bude specifikován jako parametr URL požadavku, například:
-`GET /resolve?name=apple.com&type=A HTTP/1.1`
+Při použití této operace bude možné provést překlad jednoho dotazu, který bude specifikován jako parametr URL požadavku, například:\
+`GET /resolve?name=apple.com&type=A HTTP/1.1`\
 parametry jsou:\
 name = doménové jméno nebo IP adresa \
 type = typ požadované odpovědi (A nebo PTR) 
@@ -16,14 +16,14 @@ Tedy například:\
 
 V případě nalezení odpovědi bude výsledek 200 OK. Není-li odpověď nalezena potom je odpověď 404 Not Found.
 ### POST
-Metoda POST bude obsahovat v těle požadavku seznam dotazů, každý na samostatném řádku. Řádek požadavku je: 
-`POST /dns-query HTTP/1.1`
+Metoda POST bude obsahovat v těle požadavku seznam dotazů, každý na samostatném řádku. Řádek požadavku je:\
+`POST /dns-query HTTP/1.1`\
 
-Řádek v těle obsahující jeden dotaz bude mít následující formát:
-DOTAZ:TYP
-kde:
-DOTAZ - představuje doménové jméno nebo IP adresu
-TYP - je typ požadované odpovědi, tj., A nebo PTR
+Řádek v těle obsahující jeden dotaz bude mít následující formát:\
+DOTAZ:TYP\
+kde:\
+DOTAZ - představuje doménové jméno nebo IP adresu\
+TYP - je typ požadované odpovědi, tj., A nebo PTR\
 
 Například:
 ```
