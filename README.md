@@ -5,13 +5,13 @@ Cílem projektu je implementace severu, který bude komunikovat protokolem HTTP 
 ### GET
 Při použití této operace bude možné provést překlad jednoho dotazu, který bude specifikován jako parametr URL požadavku, například:
 `GET /resolve?name=apple.com&type=A HTTP/1.1`
-parametry jsou:
-name = doménové jméno nebo IP adresa 
+parametry jsou:\
+name = doménové jméno nebo IP adresa \
 type = typ požadované odpovědi (A nebo PTR) 
 
-Odpověď bude jeden řádek, který bude mít formát:
-DOTAZ:TYP=ODPOVED
-Tedy například:
+Odpověď bude jeden řádek, který bude mít formát:\
+DOTAZ:TYP=ODPOVED\
+Tedy například:\
 `apple.com:A=17.142.160.59`
 
 V případě nalezení odpovědi bude výsledek 200 OK. Není-li odpověď nalezena potom je odpověď 404 Not Found.
