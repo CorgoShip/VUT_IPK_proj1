@@ -4,7 +4,7 @@ Cílem projektu je implementace severu, který bude komunikovat protokolem HTTP 
 ## Server musí podporovat dvě operace:
 ### GET
 Při použití této operace bude možné provést překlad jednoho dotazu, který bude specifikován jako parametr URL požadavku, například:\
-`GET /resolve?name=apple.com&type=A HTTP/1.1`
+`GET /resolve?name=apple.com&type=A HTTP/1.1`\
 parametry jsou:\
 name = doménové jméno nebo IP adresa \
 type = typ požadované odpovědi (A nebo PTR) 
