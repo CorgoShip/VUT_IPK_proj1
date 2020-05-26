@@ -74,3 +74,6 @@ www.seznam.cz:A=77.75.74.176
 147.229.14.131:PTR=dhcpz131.fit.vutbr.cz
 ihned.cz:A=46.255.231.42
 ```
+
+## Hodnoceni: 17/20
+Archiv test obsahuje testovaci vstupy.
